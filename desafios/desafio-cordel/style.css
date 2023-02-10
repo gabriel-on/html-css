@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+body{
+    height: vh;
+    background-image: url('imagens/pexels-pixabay-87452.jpg');
+}
+
+main > article{
+    margin: 0px;
+    border: 50px;
+}
+section{
+}
+section p{
+    background-color: rgba(0, 0, 0, 0.432);
+    margin: 0px;
+}
