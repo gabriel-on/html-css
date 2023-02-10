@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
             height: 97vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /* 
+            Shorthand - background
+            color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat fixed;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid blue;
@@ -28,6 +38,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ex voluptas molestias, dicta velit error ipsa sed nostrum dolor harum animi ratione impedit, facere eaque numquam at dignissimos voluptatem perferendis quaerat optio illo? Magnam quisquam veritatis doloribus impedit quas nulla quam, veniam nobis placeat pariatur iusto quis rerum dolores vitae harum est suscipit alias consequuntur. Voluptates facilis, quisquam dicta, facere velit animi voluptatibus maxime excepturi, asperiores reprehenderit sint cumque iure tenetur deserunt amet ratione aliquid? Amet veritatis unde ab deserunt corrupti labore nisi dignissimos quidem aspernatur, quae quaerat et voluptates soluta fugit impedit error magni alias facere animi, non ut sunt dicta mollitia. Ea veniam commodi consectetur quo atque officiis exercitationem minus consequatur ut aliquam facilis mollitia omnis dolorem architecto possimus, vitae natus, veritatis quidem! Minima vero dolorem dignissimos obcaecati iure, modi excepturi velit consequuntur. Expedita quos quisquam, at odit non similique laudantium aut numquam et porro accusamus corporis vel, voluptas in delectus laboriosam enim officiis pariatur ut laborum debitis iusto. Non laborum quasi quam itaque error pariatur commodi obcaecati vel maxime, consequuntur tempora eos temporibus, animi perspiciatis ratione, repudiandae nihil porro quidem in. Obcaecati et sed vitae. Dolore, adipisci alias illo nobis reiciendis odio doloribus ad delectus autem dolor?</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ex voluptas molestias, dicta velit error ipsa sed nostrum dolor harum animi ratione impedit, facere eaque numquam at dignissimos voluptatem perferendis quaerat optio illo? Magnam quisquam veritatis doloribus impedit quas nulla quam, veniam nobis placeat pariatur iusto quis rerum dolores vitae harum est suscipit alias consequuntur. Voluptates facilis, quisquam dicta, facere velit animi voluptatibus maxime excepturi, asperiores reprehenderit sint cumque iure tenetur deserunt amet ratione aliquid? Amet veritatis unde ab deserunt corrupti labore nisi dignissimos quidem aspernatur, quae quaerat et voluptates soluta fugit impedit error magni alias facere animi, non ut sunt dicta mollitia. Ea veniam commodi consectetur quo atque officiis exercitationem minus consequatur ut aliquam facilis mollitia omnis dolorem architecto possimus, vitae natus, veritatis quidem! Minima vero dolorem dignissimos obcaecati iure, modi excepturi velit consequuntur. Expedita quos quisquam, at odit non similique laudantium aut numquam et porro accusamus corporis vel, voluptas in delectus laboriosam enim officiis pariatur ut laborum debitis iusto. Non laborum quasi quam itaque error pariatur commodi obcaecati vel maxime, consequuntur tempora eos temporibus, animi perspiciatis ratione, repudiandae nihil porro quidem in. Obcaecati et sed vitae. Dolore, adipisci alias illo nobis reiciendis odio doloribus ad delectus autem dolor?</p>
     </main>
 </body>
