@@ -78,7 +78,7 @@ nav a:hover{
 main{
     background-color: white;
     border-radius: 0px 0px 10px 10px;
-    margin: 0px 60px;
+    margin: 0px 85px;
     margin-bottom: 25px;
     box-shadow: 2px 4px 10px 0px #00000083;
 }
@@ -102,6 +102,18 @@ section > p{
     padding: 20px 0px;
 }
 
+.topo > p{
+    text-align: right;
+    
+}
+.topo a{
+    background-color: yellowgreen;
+    color: var(--cor-1);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+
+}
 footer{
     background-color: black;
     color: white;
