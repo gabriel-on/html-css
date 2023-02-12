@@ -9,4 +9,6 @@ Estou apredendo a criar sites e a gerenciar repositorios!
 
 <a href="https://gabriel-on.github.io/projeto-cordel/" target="_blank">Projeto Cordel</a>
 
+<a href="https://gabriel-on.github.io/projeto-desafio/" target="_blank">Projeto Desafio</a>
+
  
