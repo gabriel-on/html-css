@@ -76,9 +76,11 @@ nav a:hover{
 }
 
 main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
     background-color: white;
     border-radius: 0px 0px 10px 10px;
-    margin: 0px 85px;
     margin-bottom: 25px;
     box-shadow: 2px 4px 10px 0px #00000083;
 }
@@ -103,16 +105,27 @@ section > p{
 }
 
 .topo > p{
+    min-width: 300px;
+    max-width: 1000px;
+    font-family: var(--fonte-1);
+    font-weight: bold;
     text-align: right;
+    margin: auto;
     
 }
 .topo a{
-    background-color: yellowgreen;
-    color: var(--cor-1);
+    background-color: red;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
     padding: 5px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.486);
 
+}
+.topo a:hover{
+    background-color: var(--cor-0);
+    color: white;
+    transition: 0.3s;
 }
 footer{
     background-color: black;
