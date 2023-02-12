@@ -4,7 +4,7 @@
 
 @font-face{
     font-family: 'Android';
-    src: url('/fontes/idroid.otf') format('opentype');
+    src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
 
@@ -32,7 +32,7 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor-1), var(--cor-3));
+    /*background-image: linear-gradient(to bottom, var(--cor-1), var(--cor-3));*/
     color: white;
     padding-bottom: 30px;
 }
@@ -52,6 +52,17 @@ header > p{
     margin: auto;
     padding-top: 40px;
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.315);
+}
+
+header.imagem{
+    box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.616);
+    
+}
+
+header#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+
 }
 
 nav{
