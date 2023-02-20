@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente ducimus, ipsam fuga laudantium aliquid, aperiam possimus voluptates, optio praesentium quaerat incidunt quasi commodi numquam unde? Natus maiores ex earum expedita culpa repellendus at, quidem molestiae quaerat eum, recusandae perferendis ab nisi dignissimos tempore eveniet odit, nihil amet? Recusandae qui iusto, provident odio aliquid eaque quia, harum possimus earum sequi, totam magnam. Aliquam perferendis nam velit sed nisi ipsum facere quos? Nihil corrupti asperiores ullam aspernatur temporibus? Eos unde exercitationem rem, reiciendis natus iure optio odio officiis aliquid quasi modi, inventore, reprehenderit possimus! Magni suscipit corporis minus culpa cumque iste!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit provident harum, perferendis cumque fuga voluptatum aliquid quas, quis qui beatae consequatur dicta modi iure. Veritatis amet minus ipsum beatae dicta assumenda voluptatem? Similique officiis sequi quibusdam praesentium, consectetur adipisci hic nesciunt quos exercitationem repellat eius amet consequuntur commodi voluptate obcaecati animi ratione facilis? Voluptatibus inventore incidunt voluptas rem! Sit eum velit soluta eos, esse, dolor culpa quaerat, quidem deserunt ipsam est. Aperiam officiis, sunt a omnis modi veniam? Sequi dolore cum illum aperiam, pariatur dolores illo repudiandae, totam impedit nobis voluptatibus, enim laboriosam fuga maiores vitae corporis quae sint velit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, adipisci! Quaerat, ab! Tempora itaque praesentium quidem consequatur cupiditate eos alias, vero voluptatem accusamus, iusto rem voluptatum illo minus labore repellendus eum aspernatur earum modi fuga sit eaque, voluptate quisquam consectetur? Aliquam, dicta, deleniti sequi consequuntur praesentium adipisci laboriosam consectetur delectus perspiciatis officia quis atque soluta ex nostrum amet veniam dolor quas eius nisi laborum error? Odio, ea earum itaque sit fugit perferendis ipsa maxime temporibus explicabo eum non alias dicta, cum et quasi consectetur nostrum labore saepe placeat at voluptas! Delectus doloremque sint ducimus eligendi praesentium repellendus dolorem a libero!</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none'
+            }
+            else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
