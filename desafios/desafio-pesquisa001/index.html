@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Formulário de Pesquisa freeCodeCamp</h1>
+    <p>Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+    <form action="pesquisa.php" method="post" autocomplete="on">
+        <fieldset>
+            <div>
+                <label for="inome">Nome:</label><br>
+                <input type="text" name="nome" id="inome" placeholder="Seu nome" required>
+            </div>
+
+            <div>
+                <label for="iemail">E-mail:</label><br>
+                <input type="email" name="email" id="iemail" placeholder="Seu E-mail" required> 
+            </div>
+
+            <div>
+                <label for="Iidade">Idade: (Opcional)</label><br>
+                <input type="number" name="idade" id="Iidade" min="10" checked placeholder="Sua idade">
+            </div>
+
+            <div>
+                <label for="Ifuncao">Qual opção melhor descreve sua profissão atual?</label><br>
+                <select name="funcao" id="Ifuncao">
+
+                    <option value="selected">--- Escolha ---</option>
+                    <optgroup label="selecione a profissão atual">
+                        <option>Estudante</option>
+                        <option>Trabalho integral</option>
+                        <option>Trabalho de meio periodo</option>
+                        <option>Prefiro não dizer</option>
+                        <option>Outro</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="irecon">Você recomendaria o freeCodeCamp a um amigo?</label>
+
+                <br>
+                <input type="radio" name="ctn" id="ic" checked> <label for="ic">Com certaza</label> <br>
+                <input type="radio" name="ctn" id="it"> <label for="it">Talvez</label> <br>
+                <input type="radio" name="ctn" id="in"> <label for="in">Não tenho certeza</label> <br>
+            </div>
+
+            <div>
+                <label for="irecur">Qual é o seu recurso favorito do freeCodeCamp?</label><br>
+                <select name="recur" id="irecur">
+                    <option value="selected">--- Escolha ---</option>
+                    <optgroup label="Selecione uma opção">
+                        <option>Desafios</option>
+                        <option>Projetos</option>
+                        <option>Comunidade</option>
+                        <option>Código aberto</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="iopt">O que você gostaria de ver melhorado? (Marque todos os que se aplicam)</label>
+                    <br>
+                        <input type="checkbox" name="fe" id="ife"> <label for="ife">Projetos front-end</label><br>
+                        <input type="checkbox" name="ed" id="ied"> <label for="ied">Projetos de back-end</label><br>
+                        <input type="checkbox" name="vs" id="ivs"> <label for="ivs">Visualização de dados</label><br>
+                        <input type="checkbox" name="ds" id="ids"> <label for="ids">Desafios</label><br>
+                        <input type="checkbox" name="cc" id="icc"> <label for="icc">Comunidade de código aberto</label><br>
+                        <input type="checkbox" name="sg" id="isg"> <label for="isg">Salas de ajuda do Gitter</label><br>
+                        <input type="checkbox" name="vd" id="ivd"> <label for="ivd">Vídeos</label><br>
+                        <input type="checkbox" name="ec" id="iec"> <label for="iec">Encontros da cidade</label><br>
+                        <input type="checkbox" name="wk" id="iwk"> <label for="iwk">Wiki</label><br>
+                        <input type="checkbox" name="fr" id="ifr"> <label for="ifr">Fórum</label><br>
+                        <input type="checkbox" name="ca" id="ica"> <label for="ica">Cursos adicionais</label><br>
+            </div>
+
+            <div>
+                <label for="cg">Algum comentário ou sugestão?</label><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="DIGITAR..."></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
