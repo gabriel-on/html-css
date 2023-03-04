@@ -18,7 +18,7 @@
 body{
     display: block;
     margin: auto;
-    width: 97vw;
+    width: 100vw;
     height: 100vh;
     background: url(../imagens/download.jpeg) no-repeat;
     background-attachment: fixed;
