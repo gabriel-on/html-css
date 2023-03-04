@@ -18,6 +18,8 @@
 body{
     display: block;
     margin: auto;
+    width: 100vw;
+    height: 100vh;
     background: url(../imagens/pexels-designecologist.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -40,7 +42,7 @@ form > fieldset{
     margin: auto;
     font-size: 1.2em;
     padding: 30px;
-    width: 600px;
+    width: 300px;
     background-color: var(---cor-0);
     color: white;
     border-radius: 5px;
@@ -56,14 +58,14 @@ input{
     box-sizing: border-box;
 }
 
-.tam{
-    width: 2.5vw;
-    height: 2.5vh;
-    margin: 10px -7px;
-}
-
-/* .let{
+/* .tam{
+    width: 5vw;
+    height: 5vh;
+    margin: 10px 0px;
 } */
+
+.let{
+}
 
 .voa{
     margin-top: 10px;
