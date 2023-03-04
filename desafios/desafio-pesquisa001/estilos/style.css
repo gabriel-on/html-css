@@ -20,10 +20,10 @@ body{
     margin: auto;
     width: 97vw;
     height: 100vh;
-    background: url(../imagens/pexels-designecologist.jpg) no-repeat;
+    background: url(../imagens/download.jpeg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
 }
 
 body h1{
