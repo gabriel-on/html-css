@@ -2,6 +2,9 @@
 
 @media screen and (min-width: 768px) {
     body{
+        width: 97vw;
+        height: 100vh;
         background-image: url(../imagens/pexels-designecologist.jpg);
+        background-position: center center;
     }
 }
