@@ -40,7 +40,7 @@ body p{
 form > fieldset{
     display: block;
     margin: auto;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 30px;
     width: 300px;
     background-color: var(---cor-0);
@@ -64,8 +64,8 @@ input{
     margin: 10px 0px;
 } */
 
-.let{
-}
+/* .let{
+} */
 
 .voa{
     margin-top: 10px;
