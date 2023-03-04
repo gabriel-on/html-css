@@ -23,7 +23,7 @@ body{
     background: url(../imagens/download.jpeg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
 }
 
 body h1{
