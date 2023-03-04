@@ -40,7 +40,7 @@ body p{
 form > fieldset{
     display: block;
     margin: auto;
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 30px;
     width: 300px;
     background-color: var(---cor-0);
@@ -50,7 +50,9 @@ form > fieldset{
 }
 
 form div {
+    text-align: justify;
     padding: 10px 0px;
+    font-size: 1em;
 }
 
 input{
