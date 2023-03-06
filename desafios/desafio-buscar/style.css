@@ -10,9 +10,6 @@ body{
     background-color: gray;
 }
 
-header h1{
-    color: white;
-}
 
 header{
     display: flex;
@@ -22,23 +19,29 @@ header{
     padding: 20px;
 }
 
+header h1{
+    color: rgb(255, 0, 0);
+}
+
 form {
     border: 1px solid red;
-    padding: 0px;
+    padding: 10px;
 }
-div input{
-    background-color: aqua;
-    width: calc(90% - 30px);
-    height: 100%;
+
+div .bus{
+    background-color: white;
     padding: 6px 0px;
-    font-size: 1em;
-    transform: translateY(-6px);
+    font-size: 1em; 
+    width: calc(90% - 15px);
+    transform: translateY(-3px);
+    border: 2px solid rgb(204, 0, 255);
 }
-span{
-    font-size: 2em;
-    width: 40px;
+
+div .botao{
+    background-color: red;
+    color: black;
     padding: 2px;
+    transform: translateY(2px);
+    border: 2px solid green;
+    cursor: pointer;
 }
-
-
-
