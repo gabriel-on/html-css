@@ -24,6 +24,7 @@ header{
 }
 
 header h1{
+    font-size: 1.5em;
     color: rgb(255, 0, 0);
 }
 
@@ -38,7 +39,7 @@ div .bus{
     padding: 6px 5px;
     font-size: 1em;
     outline: none;
-    width: calc(90% - 15px);
+    width: calc(90% - 20px);
     transform: translateY(-3px);
     border: 1px solid red;
     border-radius: 5px;
