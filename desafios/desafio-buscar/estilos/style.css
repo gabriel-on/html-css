@@ -15,7 +15,7 @@ body{
 
 header{
     position: sticky;
-    top: -2px;
+    top: -1px;
     display: flex;
     /* width: 95%; */
     align-items: center;
