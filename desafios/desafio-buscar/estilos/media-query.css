@@ -3,6 +3,12 @@
 
 @media screen and (min-width: 768px){
 
+    body{
+        background: url(../imagens/Samurai\ Digital\ Wallpaper\,\ Sword\,\ Blood\,\ Fantasy\,\ Armor\,\ Weapon\ -\ Wallpaperforu.jpeg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
     header{
         display: flex;
         align-items: center;
