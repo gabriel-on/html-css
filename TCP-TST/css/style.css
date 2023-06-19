@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+@keyframes marquee{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
 :root{
     ---cor-0: #ff0000;
     ---cor-1: #ffff00;
@@ -30,13 +39,19 @@ body, html{
     color: white;
 }
 
-.top-clan{
+.marquee2{
+    animation-delay: 15s;
+}
+
+marquee .top-clan{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 960px;
     margin: auto;
+    letter-spacing: 1px;
     padding-top: 10px;
+    animation: marquee 10s linear infinite;
 }
 
 .top-clan a{
