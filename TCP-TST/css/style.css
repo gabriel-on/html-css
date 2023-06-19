@@ -38,3 +38,13 @@ body, html{
 .top-clan p, .top-clan a{
     margin: 0px 10px 10px 10px;
 }
+
+/* MENU */
+
+.menu-bg{
+    background-color: #d1ce00;
+}
+
+.menu{
+    max-width: 960px;
+}
