@@ -106,7 +106,8 @@ body, html{
     flex-wrap: wrap;
     max-width: 960px;
     margin: auto;
-    padding: 60px 10px;
+    padding: 60px 0px;
+    
 }
 
 .sobre-info{
@@ -125,8 +126,9 @@ body, html{
 /* MEMBROS */
 
 .membros{
+    border-radius: 10px 0px;
     background-color: #000000;
-    max-width: 920px;
+    max-width: 940px;
     margin: 60px auto;
 }
 
@@ -138,19 +140,90 @@ body, html{
 .membros-item {
     margin: 5px;
     padding: 10px;
-    flex: 1 1 300px;
+    flex: 1 1 400px;
 }
 
 .membros-item a{
+    border-radius: 5px 0px;
     background-color: #ff0000;
     display: block;
     margin: 0px;
     padding: 28px;
 }
 
+/* HALL */
+
+.hall{
+    border-radius: 10px 0px;
+    background-color: #000000;
+    max-width: 940px;
+    margin: 60px auto;
+}
+
+.hall-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hall-item{
+    margin: 5px;
+    padding: 10px;
+    flex: 1 1 400px;
+}
+
+.hall-item a{
+    border-radius: 5px 0px;
+    background-color: #ff0000;
+    display: block;
+    margin: 0px;
+    padding: 28px;
+}
+
+/* REGRAS */
+
+.regras{
+    border-radius: 10px 0px;
+    background-color: rgb(54, 54, 54);
+    max-width: 940px;
+    margin: 60px auto;
+}
+
+.regras-item{
+    margin: 5px;
+    padding: 10px;
+    flex: 1 1 400px;
+}
+
+.regras-item p{
+    color: rgb(180, 178, 178);
+    font-size: 1.25em;
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.regras-item p{
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.regras-item p::before{
+    display: block;
+    content: '';
+    border-radius: 50%;
+    background-color: #fc0000;
+    margin-right: 10px;
+    padding: 5px;
+}
+
 h2{
+    border-radius: 10px 0px;
     background-image: linear-gradient(to right, var(---cor-0), transparent);
     font-size: 3em;
     margin-bottom: 0.5em;
+    padding: 10px;
     text-transform: uppercase;
 }
