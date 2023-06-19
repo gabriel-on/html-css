@@ -102,23 +102,25 @@ body, html{
 /* SOBRE */
 
 .sobre{
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
+    /* background-color: #000000; */
+    border-radius: 10px 0px;
     display: flex;
     flex-wrap: wrap;
-    max-width: 960px;
-    margin: auto;
-    padding: 60px 0px;
-    
+    max-width: 940px;
+    margin: 60px auto;
+    padding: 0px 0px;
 }
 
 .sobre-info{
-    flex: 2 1 300px;
-    margin: 0px 10px;
+    flex: 1 1 400px;
 }
 
 .sobre-info p{
     color: white;
     font-size: 1.25em;
-    margin-bottom: 1;
+    margin: 0px 10px;
+    margin-bottom: 20px;
     line-height: 1.4;
     text-align: justify;
 }
@@ -127,6 +129,7 @@ body, html{
 
 .membros{
     border-radius: 10px 0px;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
     background-color: #000000;
     max-width: 940px;
     margin: 60px auto;
@@ -155,6 +158,7 @@ body, html{
 
 .hall{
     border-radius: 10px 0px;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
     background-color: #000000;
     max-width: 940px;
     margin: 60px auto;
@@ -183,6 +187,7 @@ body, html{
 
 .regras{
     border-radius: 10px 0px;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
     background-color: rgb(54, 54, 54);
     max-width: 940px;
     margin: 60px auto;
@@ -217,6 +222,20 @@ body, html{
     background-color: #fc0000;
     margin-right: 10px;
     padding: 5px;
+}
+
+.footer{
+    align-items: center;
+    display: flex;
+    background-color: #202020;
+    height: 200px;
+}
+
+.footer p{
+    color: #858484;
+    flex: 1;
+    font-size: 2em;
+    text-align: center;
 }
 
 h2{
