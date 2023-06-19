@@ -11,5 +11,30 @@ html{
 }
 
 body, html{
+    background-color: #bebdbd;
     font-family: "nunito", Arial, Helvetica, sans-serif;
+}
+
+/* TOP */
+
+.top-clan-bg{
+    background-color: #d1ce00;
+    color: white;
+}
+
+.top-clan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.top-clan a{
+    color: black;
+}
+
+.top-clan p, .top-clan a{
+    margin: 0px 10px 10px 10px;
 }
