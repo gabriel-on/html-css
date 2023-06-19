@@ -19,7 +19,7 @@ html{
 }
 
 body, html{
-    background-color: #858484;
+    background-color: #919191;
     font-family: "nunito", Arial, Helvetica, sans-serif;
 }
 
@@ -96,7 +96,8 @@ body, html{
     line-height: 1;
     max-width: 960px;
     margin: auto;
-    padding: 60px 10px;
+    padding: 40px 10px;
+    text-transform: uppercase;
 }
 
 /* SOBRE */
