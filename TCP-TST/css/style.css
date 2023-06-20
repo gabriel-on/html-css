@@ -28,7 +28,7 @@ html{
 }
 
 body, html{
-    background-color: #919191;
+    background-color: #575757;
     font-family: "nunito", Arial, Helvetica, sans-serif;
 }
 
@@ -40,7 +40,7 @@ body, html{
 }
 
 .marquee2{
-    animation-delay: 15s;
+    animation-delay: 20s;
 }
 
 marquee .top-clan{
@@ -66,6 +66,7 @@ marquee .top-clan{
 
 .menu-bg{
     background-color: #ece801;
+    box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.349);
 }
 
 .menu{
@@ -83,9 +84,11 @@ marquee .top-clan{
 }
 
 .menu-logo{
-    font-size: 3em;
+    /* font-size: 3em;
     font-weight: bold;
-    margin: 0px 10px;
+    margin: 0px 10px; */
+    flex: 1;
+    max-width: 10%;
 }
 
 .menu-nav ul{
@@ -101,6 +104,7 @@ marquee .top-clan{
 
 .menu-nav a:hover{
     color: rgb(255, 0, 0);
+    background-color: #000000;
     transition: 0.5s;
 }
 
@@ -121,6 +125,7 @@ marquee .top-clan{
     box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
     /* background-color: #000000; */
     border-radius: 10px 0px;
+    border: 2px solid rgba(0, 0, 0, 0.212);
     display: flex;
     flex-wrap: wrap;
     max-width: 940px;
@@ -164,7 +169,7 @@ marquee .top-clan{
 
 .membros-item a{
     border-radius: 5px 0px;
-    background-color: #ff0000;
+    background-image: linear-gradient(to left, var(---cor-0), transparent);
     display: block;
     margin: 0px;
     padding: 28px;
@@ -193,7 +198,7 @@ marquee .top-clan{
 
 .hall-item a{
     border-radius: 5px 0px;
-    background-color: #ff0000;
+    background-image: linear-gradient(to left, var(---cor-0), transparent);
     display: block;
     margin: 0px;
     padding: 28px;
@@ -261,4 +266,9 @@ h2{
     margin-bottom: 0.5em;
     padding: 10px;
     text-transform: uppercase;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
 }
