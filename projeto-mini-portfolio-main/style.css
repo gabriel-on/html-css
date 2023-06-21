@@ -46,7 +46,7 @@ img{
 /* MENU */
 
 .menu-bg{
-    border-top: 2px solid red;
+    border-top: 3px solid red;
     background-color: black;
     max-width: 100%;
     margin: auto;
@@ -227,6 +227,7 @@ main > h2{
 
 footer{
     color: rgb(161, 161, 161);
+    border-top: 3px solid red;
     background-color: #3a3734;
     display: flex;
     font-size: 1.5em;
