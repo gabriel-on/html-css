@@ -48,7 +48,7 @@ img{
 .menu-bg{
     border-top: 2px solid red;
     background-color: black;
-    max-width: 940px;
+    max-width: 100%;
     margin: auto;
 }
 
