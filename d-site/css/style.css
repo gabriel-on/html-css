@@ -53,6 +53,8 @@ img{
     flex: 1;
     font-size: 1.5em;
     flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px 20px;
 }
 
 .menu-nav ul{
