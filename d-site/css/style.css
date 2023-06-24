@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -16,6 +17,7 @@
 
 body {
     background-color: var(--cor-0);
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
 }
 
 img{
@@ -24,6 +26,49 @@ img{
     max-width: 100%;
     width: 200px;
     margin: 10px auto;
+}
+
+/* Menu */
+
+.menu-bg{
+    position: relative;
+    box-shadow: 0px 5px 7px #00000059;
+    background-color: var(--cor-2);
+    margin: auto;
+    max-width: 100%;
+}
+
+.menu{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu-nav a{
+    color: var(--cor-0);
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0px 10px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu-nav a:hover{
+    color: var(--cor-4);
+    background-color: var(--cor-0);
+    transition: 0.2s;
+
 }
 
 /* Main */
