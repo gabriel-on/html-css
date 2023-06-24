@@ -38,8 +38,6 @@ h4 > sup > s{
 
 .menu-bg{
     background-color: var(--cor-2);
-    box-shadow: 0px 5px 7px #00000059;
-    border-bottom: 3px solid var(--cor-4);
     margin: auto;
     max-width: 100%;
     position: relative;
@@ -89,6 +87,27 @@ h4 > sup > s{
     transition: 0.2s;
 
 }
+/* Nav Bar */
+
+.nav-bg{
+    background-color: var(--cor-0);
+    box-shadow: 0px 5px 7px #00000059;
+    border-bottom: 3px solid var(--cor-4);
+}
+
+.nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: auto;
+    padding: 10px;
+}
+
+.nav-container p{
+    color: var(--cor-3);
+    margin: 0px 10px;
+}
 
 /* Main */
 
@@ -101,8 +120,9 @@ main {
 }
 
 main > h1{
-    color: white;
+    color: var(--cor-0);
     background-image: radial-gradient(circle, var(--cor-3), transparent);
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.377);
     flex-wrap: wrap;
     text-align: center;
     text-transform: uppercase;
@@ -111,12 +131,15 @@ main > h1{
 }
 
 main h2{
-    color: white;
+    color: var(--cor-0);
     background-image: linear-gradient(to right, var(--cor-2), transparent);
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
     text-transform: uppercase;
+    font-weight: bolder
+    
+    ;
 }
 
 /* Celulares */
@@ -210,6 +233,8 @@ main h2{
 
 .ac-imagem-item{
     border: 3px solid var(--cor-0);
+    border-radius: 5px;
+    background-color: var(--cor-1);
     flex: 0 1 auto;
     justify-content: space-around;
     max-width: 940px;
@@ -235,7 +260,7 @@ main h2{
 
 .ac-imagem-item h3{
     color: var(--cor-3);
-    background-color: var(--cor-1);
+    background-color: var(--cor-0);
     border-radius: 5px;
     justify-content: center;
     display: flex;
@@ -282,6 +307,19 @@ main h2{
     max-width: 940px;
     margin: auto;
     padding: 0px;
+}
+
+.faq-item a{
+    color: var(--cor-4);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.faq-item a:hover{
+    color: var(--cor-2);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.2s;
 }
 
 .faq-item h3{
