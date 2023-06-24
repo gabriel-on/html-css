@@ -30,12 +30,17 @@ img{
 
 /* Menu */
 
+/* header{
+    position: ;
+} */
+
 .menu-bg{
-    position: relative;
-    box-shadow: 0px 5px 7px #00000059;
     background-color: var(--cor-2);
+    box-shadow: 0px 5px 7px #00000059;
+    border-bottom: 3px solid var(--cor-4);
     margin: auto;
     max-width: 100%;
+    /* position: fixed; */
 }
 
 .menu{
@@ -59,7 +64,7 @@ img{
     display: block;
     font-size: 1.2em;
     font-weight: bold;
-    margin: 0px 10px;
+    margin: 0px;
     padding: 20px;
     text-decoration: none;
 }
