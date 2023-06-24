@@ -49,12 +49,15 @@ img{
     padding: 20px 0px;
 }
 .logo-name{
-    color: var(--cor-0);
+    color: var(--cor-4);
+    background-color: var(--cor-0);
+    border-radius: 5px;
     flex: 1;
     font-size: 1.5em;
+    max-width: 252px;
     flex-wrap: wrap;
     margin: 0px;
-    padding: 0px 20px;
+    padding: 0px 15px;
 }
 
 .menu-nav ul{
