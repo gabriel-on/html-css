@@ -181,10 +181,10 @@ main h2{
     padding: 10px;
 }
 
-.cllr-usados-item img:hover{
+/* .cllr-usados-item img:hover{
     color: var(--cor-1);
     transition: 0.1s;
-}
+} */
 
 /* Acessorios */
 
@@ -203,17 +203,64 @@ main h2{
 }
 
 .ac-imagem-item{
+    border: 3px solid var(--cor-0);
     flex: 0 1 auto;
     justify-content: space-around;
     max-width: 940px;
-    margin: auto;
+    margin: 20px auto;
     padding: 0px 10px;
 }
 
-.ac-imagem-item img:hover{
+.ac-imagem-item img{
+    max-width: 200px;
+}
+
+.ac-imagem-item p{
+    background: radial-gradient(circle, var(--cor-0), var(--cor-1));
+    color: var(--cor-4);
+    font-size: 1.2em;
+    /* grid-column: 1;
+    grid-row: 1; */
+    text-align: center;
+    width: 200px;
+    margin: 10px auto;
+    margin-top: -18%;
+    padding: 20px;
+    position: absolute;
+}
+
+.ac-imagem-item h3{
+    color: var(--cor-3);
+    background-color: var(--cor-1);
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.7em;
+    max-width: 200px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.ac-imagem-item h4{
+    color: var(--cor-3);
+    background-color: var(--cor-0);
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    max-width: 200px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+/* .ac-imagem-item img:hover{
     border: 3px solid var(--cor-1);
     transition: 0.1s;
-}
+} */
 
 /* FAQs */
 
