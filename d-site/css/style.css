@@ -28,6 +28,12 @@ img{
     margin: 10px auto;
 }
 
+h4 > sup > s{
+    color: red;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
 /* Menu */
 
 .menu-bg{
@@ -139,19 +145,19 @@ main h2{
     padding: 0px 20px;
 }
 
-.cllr-usados-item p{
+/* .cllr-usados-item p{
     background: radial-gradient(circle, var(--cor-0), var(--cor-1));
     color: var(--cor-4);
     font-size: 1.2em;
-    /* grid-column: 1;
-    grid-row: 1; */
+    grid-column: 1;
+    grid-row: 1;
     text-align: center;
     width: 200px;
     margin: 10px auto;
     margin-top: -18%;
     padding: 20px;
     position: absolute;
-}
+} */
 
 .cllr-usados-item h3{
     color: var(--cor-3);
@@ -215,19 +221,17 @@ main h2{
     max-width: 200px;
 }
 
-.ac-imagem-item p{
+/* .ac-imagem-item p{
     background: radial-gradient(circle, var(--cor-0), var(--cor-1));
     color: var(--cor-4);
-    font-size: 1.2em;
-    /* grid-column: 1;
-    grid-row: 1; */
+    background: #000000a4;
     text-align: center;
-    width: 200px;
-    margin: 10px auto;
-    margin-top: -18%;
-    padding: 20px;
-    position: absolute;
-}
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto;
+    padding: 10px;
+    align-content: center;
+} */
 
 .ac-imagem-item h3{
     color: var(--cor-3);
