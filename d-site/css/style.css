@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor-0:#1f2b1c;
+    --cor-1:#0E4700;
+    --cor-2:#1E9400;
+    --cor-3:#28C700;
+    --cor-4:#5CD03E;
+}
+
+body {
+    background-color: var(--cor-0);
+}
+
+img{
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.411);
+    border-radius: 10px;
+    max-width: 100%;
+    width: 200px;
+    margin: 10px auto;
+}
+
+/* Main */
+
+main {
+    background-color: var(--cor-1);
+    max-width: 940px;
+    margin: auto;
+    padding: 40px 0px;
+}
+
+main > h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px;
+}
+
+main h2{
+    color: white;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, var(--cor-2), transparent);
+    margin: 10px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+/* Celulares Usados */
+
+.cllr-usados-bg {
+    background-color: var(--cor-2);
+    border-radius: 5px;
+    max-width: 940px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+.cllr-usados-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cllr-usados-item {
+    flex: 0 1 auto;
+    justify-content: space-around;
+    max-width: 940px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.cllr-usados-item img:hover{
+    border: 3px solid var(--cor-1);
+    transition: 0.1s;
+}
+
+/* Acessorios */
+
+.acessorios-bg{
+    background-color: var(--cor-2);
+    border-radius: 5px;
+    max-width: 940px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+.ac-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ac-imagem-item{
+    flex: 0 1 auto;
+    justify-content: space-around;
+    max-width: 940px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.ac-imagem-item img:hover{
+    border: 3px solid var(--cor-1);
+    transition: 0.1s;
+}
+
+/* FAQs */
+
+.faq-bg {
+    background-color: var(--cor-0);
+    border-radius: 5px;
+    max-width: 940px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+.faq-item{
+    flex: 0 1 auto;
+    justify-content: space-around;
+    max-width: 940px;
+    margin: auto;
+    padding: 0px;
+}
+
+.faq-item h3{
+    color: var(--cor-3);
+    padding: 15px 0px;
+    text-transform: uppercase;
+}
+
+.faq-item p{
+    color: var(--cor-2);
+    font-style: italic;
+    font-size: 1.2em;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+/* Footer */
+
+footer{
+    color: var(--cor-2);
+    background-color: var(--cor-1);
+    border-top: 3px solid var(--cor-3);
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 80px;
+}
