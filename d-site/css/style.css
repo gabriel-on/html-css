@@ -34,6 +34,11 @@ h4 > sup > s{
     margin-right: 10px;
 }
 
+a{
+    color: var(--cor-4);
+    text-decoration: none;
+}
+
 /* Menu */
 
 .menu-bg{
@@ -84,8 +89,8 @@ h4 > sup > s{
     border-radius: 5px;
     background-color: var(--cor-0);
     transition: 0.2s;
-    
 }
+
 /* Nav Bar */
 
 .nav-bg{
