@@ -100,7 +100,7 @@ h4 > sup > s{
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 940px;
-    margin: auto;
+    margin: 10px auto;
     padding: 0px 10px;
 }
 
@@ -128,7 +128,7 @@ h4 > sup > s{
 }
 
 .redes-item a{
-    margin: 10px auto;
+    margin: 0px auto;
     height: 55px;
 }
 
