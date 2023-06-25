@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cor-0:#1f2b1c;
+    --cor-1:#0E4700;
+    --cor-2:#1E9400;
+    --cor-3:#28C700;
+    --cor-4:#5CD03E;
+}
+
+body {
+    background-color: var(--cor-0);
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+img{
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.411);
+    border-radius: 10px;
+    max-width: 100%;
+    width: 200px;
+    margin: 10px auto;
+}
+
+h4 > sup > s{
+    color: red;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+a{
+    color: var(--cor-4);
+    text-decoration: none;
+}
+
+/* Menu */
+
+.menu-bg{
+    background-color: var(--cor-2);
+    margin: auto;
+    max-width: 100%;
+}
+
+.menu{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: auto;
+    padding: 20px 0px;
+}
+.logo-name{
+    color: var(--cor-4);
+    background-color: var(--cor-0);
+    border-radius: 5px;
+    flex: 1;
+    font-size: 1.5em;
+    max-width: 252px;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px 15px;
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu-nav a{
+    color: var(--cor-0);
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.menu-nav a:hover{
+    color: var(--cor-4);
+    border-radius: 5px;
+    background-color: var(--cor-0);
+    transition: 0.2s;
+}
+
+/* Nav Bar */
+
+.nav-bg{
+    background-color: var(--cor-0);
+    box-shadow: 0px 5px 7px #00000059;
+    border-bottom: 3px solid var(--cor-4);
+    position: relative;
+}
+
+.nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: 10px auto;
+    padding: 0px 10px;
+}
+
+.nav-container p{
+    color: var(--cor-3);
+    flex: 1 1 auto;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.nav-container img{
+    filter: invert(79%) sepia(9%) saturate(3434%) hue-rotate(56deg) brightness(89%) contrast(90%);
+    box-shadow: none;
+    max-width: 35px;
+    margin: 10px;
+}
+
+.redes-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redes-item a{
+    margin: 0px auto;
+    height: 55px;
+}
+
+#instagram:hover{
+    transition: 0.8s;
+    filter: invert(12%) sepia(93%) saturate(1605%) hue-rotate(321deg) brightness(94%) contrast(102%);
+    
+}
+
+#whatsapp:hover{
+    transition: 0.8s;
+    filter: invert(45%) sepia(44%) saturate(5146%) hue-rotate(75deg) brightness(91%) contrast(105%);
+    
+}
