@@ -162,13 +162,16 @@ main {
     align-items: center;
     background-color: var(--cor-2);
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: 2fr, 1fr;
-    gap: 2rem;
-    height: 100%;
-    margin: 20px 10px;
-    margin-bottom: 80px;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 940px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.home-bg > .foto-lateral{
+    flex: 0 1 100px;
+    margin: 10px;
 }
 
 .home-text h1{
@@ -196,7 +199,6 @@ main {
     max-width: 100%;
     width: 300px;
     height: auto;
-    margin-left:  25%;
 }
 
 .home-text a { 
@@ -214,17 +216,18 @@ main {
 }
 
 .foto-lateral{
-    position: absolute;
-    top: 38%;
-    left: 17%;
+    /* position: relative; */
+    /* top: 38%; */
+    /* left: 17%; */
     gap: 2rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     list-style: none;
-    justify-content: center;
+    grid-template-columns: 2fr;
+    justify-items: center;
 }
 
 .foto-lateral img{
+    margin: auto;
     width: 50px;
     height: auto;
     max-width: 100%;
@@ -233,4 +236,18 @@ main {
 .row{
     background-color: var(--cor-0);
     border: 3px solid var(--cor-0);
+}
+
+@media (max-width: 600px) {
+    .foto-lateral{
+        grid-template-columns: 1fr 200px;
+    }
+    .home-bg{
+        display: flex;
+        overflow: scroll;
+    }
+    .home-bg > .foto-lateral{
+        flex: 1;
+        margin: 0px 10px;
+    }
 }
