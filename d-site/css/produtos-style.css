@@ -219,11 +219,12 @@ main {
     /* position: relative; */
     /* top: 38%; */
     /* left: 17%; */
-    gap: 2rem;
+    gap: 20px;
     display: grid;
     list-style: none;
     grid-template-columns: 2fr;
     justify-items: center;
+    margin: auto;
 }
 
 .foto-lateral img{
@@ -240,7 +241,7 @@ main {
 
 @media (max-width: 600px) {
     .foto-lateral{
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 2fr 200px;
     }
     .home-bg{
         display: flex;
