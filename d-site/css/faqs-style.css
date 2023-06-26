@@ -21,19 +21,18 @@ body {
 }
 
 img{
+    display: block;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.411);
-    border-radius: 10px;
     max-width: 100%;
-    width: 200px;
     margin: 10px auto;
 }
 
-h4 > s{
+h3 > s{
     color: red;
     display: flex;
     flex-wrap: wrap;
-    font-size: 0.7em;
-    /* margin-right: 10px; */
+    font-size: 0.6em;
+    /* margin: 5px auto; */
 }
 
 a{
@@ -112,7 +111,6 @@ a{
 }
 
 .nav-container p{
-    /* align-items: center; */
     color: var(--cor-3);
     flex: 1 1 auto;
     font-size: 1.2em;
@@ -121,7 +119,6 @@ a{
     padding: 0px 10px;
 }
 
-/* conversor de cores: https://codepen.io/sosuke/pen/Pjoqqp */
 .nav-container img{
     filter: invert(79%) sepia(9%) saturate(3434%) hue-rotate(56deg) brightness(89%) contrast(90%);
     box-shadow: none;
@@ -182,162 +179,50 @@ main h2{
     font-weight: bolder;
 }
 
-/* Celulares */
+/* FAQs */
 
-.cllr-usados-bg {
-    background-color: var(--cor-2);
-    border-radius: 5px;
-    max-width: 940px;
-    margin: 20px 10px;
-    margin-bottom: 80px;
-    padding: 20px;
-}
-
-.cllr-usados-container{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.cllr-usados-item {
-    border: 3px solid var(--cor-0);
-    border-radius: 5px;
-    flex: 0 1 auto;
-    justify-content: space-around;
-    max-width: 940px;
-    margin: 20px auto;
-    padding: 0px 20px;
-}
-
-/* .cllr-usados-item p{
-    background: radial-gradient(circle, var(--cor-0), var(--cor-1));
-    color: var(--cor-4);
-    font-size: 1.2em;
-    grid-column: 1;
-    grid-row: 1;
-    text-align: center;
-    width: 200px;
-    margin: 10px auto;
-    margin-top: -18%;
-    padding: 20px;
-    position: absolute;
-} */
-
-.cllr-usados-item h3{
-    color: var(--cor-3);
-    background-color: var(--cor-1);
-    border-radius: 5px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 0.7em;
-    max-width: 200px;
-    text-transform: uppercase;
-    margin: 10px 0px;
-    padding: 10px;
-}
-
-.cllr-usados-item h4{
-    color: var(--cor-3);
+.faq-bg {
     background-color: var(--cor-0);
     border-radius: 5px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1em;
-    max-width: 200px;
-    text-transform: uppercase;
-    margin: 10px 0px;
-    padding: 10px;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-/* .cllr-usados-item img:hover{
-    color: var(--cor-1);
-    transition: 0.1s;
-} */
-
-/* Acessorios */
-
-.acessorios-bg{
-    background-color: var(--cor-2);
-    border-radius: 5px;
     max-width: 940px;
     margin: 20px 10px;
-    margin-bottom: 80px;
     padding: 20px;
 }
 
-.ac-container{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.ac-imagem-item{
-    border: 3px solid var(--cor-0);
-    border-radius: 5px;
-    background-color: var(--cor-1);
+.faq-item{
     flex: 0 1 auto;
     justify-content: space-around;
     max-width: 940px;
-    margin: 20px auto;
-    padding: 0px 10px;
-}
-
-.ac-imagem-item img{
-    max-width: 200px;
-}
-
-/* .ac-imagem-item p{
-    background: radial-gradient(circle, var(--cor-0), var(--cor-1));
-    color: var(--cor-4);
-    background: #000000a4;
-    text-align: center;
-    grid-column: 1;
-    grid-row: 2;
     margin: auto;
-    padding: 10px;
-    align-content: center;
-} */
-
-.ac-imagem-item h3{
-    color: var(--cor-3);
-    background-color: var(--cor-0);
-    border-radius: 5px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 0.7em;
-    max-width: 200px;
-    text-transform: uppercase;
-    margin: 10px 0px;
-    padding: 10px;
+    padding: 0px;
 }
 
-.ac-imagem-item h4{
-    color: var(--cor-3);
-    background-color: var(--cor-0);
-    border-radius: 5px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1em;
-    max-width: 200px;
-    text-transform: uppercase;
-    margin: 10px 0px;
-    padding: 10px;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
+.faq-item a{
+    color: var(--cor-4);
+    font-weight: bold;
+    text-decoration: none;
 }
 
-/* .ac-imagem-item img:hover{
-    border: 3px solid var(--cor-1);
-    transition: 0.1s;
-} */
+.faq-item a:hover{
+    color: var(--cor-2);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.faq-item h3{
+    color: var(--cor-3);
+    padding: 15px 0px;
+    text-transform: uppercase;
+}
+
+.faq-item p{
+    color: var(--cor-2);
+    font-style: italic;
+    font-size: 1.2em;
+    text-indent: 10px;
+    text-align: justify;
+}
 
 /* Footer */
 
