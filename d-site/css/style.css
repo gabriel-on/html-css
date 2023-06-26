@@ -28,10 +28,12 @@ img{
     margin: 10px auto;
 }
 
-h4 > sup > s{
+h4 > s{
     color: red;
+    display: flex;
     flex-wrap: wrap;
-    margin-right: 10px;
+    font-size: 0.7em;
+    /* margin-right: 10px; */
 }
 
 a{
@@ -246,6 +248,10 @@ main h2{
     text-transform: uppercase;
     margin: 10px 0px;
     padding: 10px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* .cllr-usados-item img:hover{
@@ -322,6 +328,10 @@ main h2{
     text-transform: uppercase;
     margin: 10px 0px;
     padding: 10px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* .ac-imagem-item img:hover{
