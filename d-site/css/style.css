@@ -208,19 +208,9 @@ main h2{
     padding: 0px 20px;
 }
 
-/* .cllr-usados-item p{
-    background: radial-gradient(circle, var(--cor-0), var(--cor-1));
-    color: var(--cor-4);
-    font-size: 1.2em;
-    grid-column: 1;
-    grid-row: 1;
-    text-align: center;
-    width: 200px;
-    margin: 10px auto;
-    margin-top: -18%;
-    padding: 20px;
-    position: absolute;
-} */
+.cllr-usados-item img{
+    border-radius: 5px;
+}
 
 .cllr-usados-item h3{
     color: var(--cor-3);
@@ -287,7 +277,8 @@ main h2{
 }
 
 .ac-imagem-item img{
-    max-width: 200px;
+    border-radius: 5px;
+    /* max-width: 200px; */
 }
 
 /* .ac-imagem-item p{
