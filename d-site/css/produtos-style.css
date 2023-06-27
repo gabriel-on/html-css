@@ -194,7 +194,6 @@ main {
 
 .produto-bg{
     align-items: center;
-    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -203,6 +202,7 @@ main {
 }
 
 .produto-bg img{
+    cursor: pointer;
     box-shadow: none;
     display: flex;
     max-width: 100%;
