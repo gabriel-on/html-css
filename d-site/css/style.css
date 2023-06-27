@@ -332,6 +332,49 @@ main h2{
 
 /* Footer */
 
+.nav-footer-bg{
+    color: var(--cor-2);
+    background-color: var(--cor-1);
+    border-top: 3px solid var(--cor-3);
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 80px;
+}
+
+.nav-footer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-footer-item{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-footer{
+    padding: 0px 40px;
+}
+
+.nav-footer h3{
+    display: flex;
+    width: 100%;
+}
+
+.nav-footer ul{
+    width: 100%;
+    margin: 10px auto;
+    list-style: none;
+}
+
+.nav-footer li{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 footer{
     color: var(--cor-2);
     background-color: var(--cor-1);
@@ -340,8 +383,7 @@ footer{
     font-style: italic;
     text-align: center;
     justify-content: center;
-    margin-top: 80px;
-    padding: 80px;
+    padding: 60px;
 }
 
 footer a{
