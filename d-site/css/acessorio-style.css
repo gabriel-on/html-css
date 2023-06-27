@@ -269,6 +269,7 @@ main {
 
 .info-item {
     background-color: var(--cor-1);
+    border-radius: 5px;
     max-width: 100%;
 }
 
