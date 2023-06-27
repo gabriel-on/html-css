@@ -22,7 +22,7 @@ body {
 
 img{
     display: block;
-    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.411);
+    /* box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.411); */
     max-width: 100%;
     margin: 10px auto;
 }
@@ -176,6 +176,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
+    /* height: 500px; */
     margin: 10px;
     padding: 10px;
 }
@@ -187,22 +188,25 @@ main {
 
 .foto-container img{
     max-width: 100%;
-    width: 300px;
+    /* width: 300px; */
     margin: auto;
 }
 
 .produto-bg{
-    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     padding: 10px 0px;
 }
 
 .produto-bg img{
     box-shadow: none;
+    display: flex;
     max-width: 100%;
-    width: 50px;
+    /* width: 50px; */
     margin: auto;
 }
 
