@@ -198,7 +198,7 @@ main h2{
     flex-wrap: wrap;
 }
 
-.cllr-usados-item {
+/* .cllr-usados-item {  <-------------------- VERSÃO ANTIGA
     border: 3px solid var(--cor-0);
     border-radius: 5px;
     flex: 0 1 auto;
@@ -206,7 +206,20 @@ main h2{
     max-width: 940px;
     margin: 20px auto;
     padding: 0px 20px;
+} */
+
+/* -------------------------------------------------------- */
+.cllr-usados-container a {
+    border: 3px solid var(--cor-0);
+    border-radius: 5px;
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-around;
+    max-width: 940px;
+    margin: 20px auto;
+    padding: 0px 20px;
 }
+/* -------------------------------------------------------- */
 
 .cllr-usados-item img{
     border-radius: 5px;
@@ -330,7 +343,7 @@ main h2{
     transition: 0.1s;
 } */
 
-/* Footer */
+/* -------------------------------------------------------- */
 
 .nav-footer-bg{
     color: var(--cor-2);
@@ -340,13 +353,21 @@ main h2{
     text-align: center;
     justify-content: center;
     margin-top: 80px;
-    padding: 80px;
+    padding: 40px;
+}
+.nav-footer-bg > h3{
+    color: var(--cor-3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px ;
 }
 
 .nav-footer-container{
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .nav-footer-item{
     width: 100%;
@@ -360,6 +381,8 @@ main h2{
 }
 
 .nav-footer h3{
+    color: var(--cor-3);
+    font-size: 1em;
     display: flex;
     width: 100%;
 }
@@ -373,12 +396,24 @@ main h2{
 .nav-footer li{
     display: flex;
     flex-wrap: wrap;
+    font-size: 0.8em;
 }
+
+.nav-footer li a{
+    color: var(--cor-2);
+}
+
+.nav-footer li a:hover{
+    color: var(--cor-3);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+/* Footer */
 
 footer{
     color: var(--cor-2);
-    background-color: var(--cor-1);
-    border-top: 3px solid var(--cor-3);
+    background-color: var(--cor-0);
     font-size: 1.5em;
     font-style: italic;
     text-align: center;
