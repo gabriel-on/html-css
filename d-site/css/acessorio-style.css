@@ -267,6 +267,25 @@ main {
 
 /* ----------------------------------------- */
 
+.info-item {
+    background-color: var(--cor-1);
+    max-width: 100%;
+}
+
+.info-item h1{
+    color: var(--cor-4);
+    display: flex;
+    justify-content: center;
+}
+
+.info-item p{
+    color: var(--cor-2);
+    text-align: justify;
+    margin: 10px;
+}
+
+/* ----------------------------------------- */
+
 .desc-item table{
     /* display: flex; */
     background-color: var(--cor-3);
