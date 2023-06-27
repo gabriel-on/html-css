@@ -35,6 +35,11 @@ h3 > s{
     /* margin: 5px auto; */
 }
 
+.desc-item .off{
+    color: var(--cor-0);
+    background-color: red;
+}
+
 a{
     color: var(--cor-4);
     text-decoration: none;
@@ -338,6 +343,7 @@ main {
     background-color: var(--cor-1);
     border-radius: 5px;
     font-size: 1.4em;
+    margin: 5px 0px;
     padding: 5px;
 }
 
