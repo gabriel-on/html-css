@@ -221,6 +221,11 @@ main {
     width: 100px;
 }
 
+.row:hover{
+    border: 2px solid var(--cor-4);
+    transition: 0.2s;
+}
+
 /* ----------------------------------------- */
 
 .desc-bg{
