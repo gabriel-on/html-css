@@ -254,9 +254,16 @@ main {
     flex-wrap: wrap;
 }
 
+.desc-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* ----------------------------------------- */
 
 .desc-item table{
+    /* display: flex; */
     /* background-color: var(--cor-4); */
     margin: 10px auto;
     width: 100%;
@@ -330,6 +337,7 @@ main {
     justify-content: center;
     margin: 10px auto;
     margin-bottom: 40px;
+    width: 100%;
     padding: 15px 70px;
     font-size: 1.5em;
 }
