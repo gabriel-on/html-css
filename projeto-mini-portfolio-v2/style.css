@@ -1,14 +1,5 @@
 @charset "UTF-8";
 
-/* @keyframes img{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-} */
-
 :root{
     --cor-0: #8D49F2;
     --cor-1: #7323ec;
@@ -30,20 +21,13 @@ body{
     
 }
 
-.bola{
-    display: flex;
-    max-width: 940px;
-    margin: 80px auto;
-    justify-content: center;
-}
-
 img{
-    border-radius: 50%;
+    border-radius: 100%;
     box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.445);
     max-width: 100%;
 }
 
-/* MENU */
+/* MENU < ---------------------------------- */
 
 .menu-bg{
     border-top: 3px solid red;
@@ -84,18 +68,41 @@ img{
     transition: 0.5s;
 }
 
-/* MAIN */
-
-main > h1{
-    color: rgb(27, 27, 27);
-    display: block;
-    background-color: var(--cor-1);
-    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.336);
+.logo-name{
+    color: var(--cor-1);
+    display: flex;
     text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 10px 0px;
 }
+
+/* MAIN < ---------------------------------- */
+
+main {
+    /* background-color: var(--cor-1); */
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 0px 0px 5px 5px;
+    max-width: 940px;
+    margin: auto;
+    padding: 40px 0px;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+}
+
+/* .projetos-bg{
+    background-color: var(--cor-1);
+    border-radius: 0px 0px 5px 5px;
+    max-width: 940px;
+    margin: auto;
+    padding: 40px 0px;
+    display: flex;
+} */
 
 main > h2{
     color: rgb(255, 255, 255);
@@ -109,30 +116,38 @@ main > h2{
     padding: 15px 10px;
 }
 
-/* DESCRIÇÃO */
+/* DESCRIÇÃO < ---------------------------------- */
 
-.desc{
-    flex: 1 1 400px;
+.info-bg{
     /* box-shadow: 0px 4px 5px 7px rgba(0, 0, 0, 0.445); */
     background-color: var(--cor-2);
-    border-radius: 0px 0px 10px 0px;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    max-width: 940px;
-    margin: 0px auto;
-    margin-bottom: 40px;
+    max-width: 600px;
+    margin: 20px auto;
     padding: 40px 0px;
 }
 
-/* .desc::before{
-    border-bottom: 3px solid var(--cor-1);
-    display: block;
-    content: '';
-    height: 170px;
-    width: 100%;
-    max-width: 940px;
-    position: absolute;
-} */
+.logo-img {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 80px auto;
+}
+
+desc{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desc h1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
+}
 
 .desc p{
     font-size: 1.25em;
@@ -142,7 +157,51 @@ main > h2{
     text-align: justify;
 }
 
-/* PROJETOS */
+/* REDES < ---------------------------------- */
+
+.redes-bg{
+    background-color: var(--cor-2);
+    border-radius: 10px;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 40px 0px;
+}
+
+.redes-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redes-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.redes-item img{
+    margin: 10px;
+    max-width: 100%;
+}
+
+.redes-bg h2{
+    display: flex;
+}
+
+.redes-item a{
+    text-decoration: none;
+}
+
+.redes-item a:hover{
+    color: var(--cor-4);
+    text-decoration: underline;
+    transition: 1s;
+}
+
+/* PROJETOS < ---------------------------------- */
 
 .projetos-bg{
     background-image: linear-gradient(to left, var(--cor-3), var(--cor-2));
@@ -153,16 +212,6 @@ main > h2{
     margin-bottom: 40px;
     padding: 20px 0px;
 }
-
-/* .projetos-bg::after{
-    border-bottom: 3px solid var(--cor-1);
-    display: block;
-    content: '';
-    height: 35px;
-    width: 100%;
-    max-width: 940px;
-    position: absolute;
-} */
 
 .projetos-container{
     display: flex;
@@ -193,48 +242,12 @@ main > h2{
     border-radius: 0%;
 }
 
-/* REDES */
-
-.redes-bg{
-    background-color: var(--cor-2);
-    border-radius: 0px 0px 10px 0px;
-    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
-    max-width: 940px;
-    margin: 0px auto;
-    margin-bottom: 40px;
-    padding: 20px 0px;
-}
-
-.redes-container{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.redes-item{
-    color: var(--cor-4);
-    font-size: 1.2em;
-    flex: 1 1 400px;
-    margin: 0px;
-    padding: 15px 10px;
-}
-
-.redes-item a{
-    color: var(--cor-0);
-    text-decoration: none;
-}
-
-.redes-item a:hover{
-    color: var(--cor-4);
-    text-decoration: underline;
-    transition: 1s;
-}
-
-/* FOOTER */
+/* FOOTER < ---------------------------------- */
 
 footer{
     color: var(--cor-2);
     border-top: 3px solid var(--cor-0);
-    background-color: var(--cor-3);
+    background-color: black;
     display: flex;
     font-size: 1.5em;
     flex-wrap: wrap;
