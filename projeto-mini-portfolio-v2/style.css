@@ -194,11 +194,14 @@ desc{
 }
 
 .redes-item img{
+    background-color: var(--cor-0);
+    border: 2px solid var(--cor-0);
     margin: 10px;
     max-width: 100%;
 }
 
 .redes-bg h2{
+    color: var(--cor-0);
     display: flex;
 }
 
