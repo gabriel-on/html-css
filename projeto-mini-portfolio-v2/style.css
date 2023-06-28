@@ -123,7 +123,7 @@ main > h2{
 /* DESCRIÇÃO < ---------------------------------- */
 
 .info-bg{
-    background: linear-gradient(to left, var(--cor-4), var(--cor-2));
+    background: linear-gradient(to left, var(--cor-4), var(--cor-3));
     box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
     border-radius: 10px;
     display: flex;
@@ -146,6 +146,7 @@ desc{
 }
 
 .desc h1{
+    color: var(--cor-0);
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
@@ -153,6 +154,7 @@ desc{
 }
 
 .desc p{
+    color: var(--cor-1);
     font-size: 1.25em;
     margin: 0px 10px;
     margin-bottom: 10px;
@@ -163,7 +165,7 @@ desc{
 /* REDES < ---------------------------------- */
 
 .redes-bg{
-    background: linear-gradient(to left, var(--cor-4), var(--cor-2));
+    background: linear-gradient(to left, var(--cor-4), var(--cor-3));
     border-radius: 10px;
     box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
     max-width: 300px;
@@ -213,7 +215,7 @@ desc{
 /* PROJETOS < ---------------------------------- */
 
 .projetos-bg{
-    background-image: linear-gradient(to left, var(--cor-4), var(--cor-2));
+    background-image: linear-gradient(to left, var(--cor-4), var(--cor-3));
     box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
     border-radius: 0px 0px 10px 10px;
     display: flex;
@@ -225,8 +227,8 @@ desc{
 }
 
 #projeto{
-    color: var(--cor-3);
-    background: linear-gradient(to left, var(--cor-4), var(--cor-2));
+    color: var(--cor-0);
+    background: linear-gradient(to left, var(--cor-4), var(--cor-3));
     box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
     border-radius: 10px 10px 0px 0px;
     border-bottom: 2px solid var(--cor-4);
