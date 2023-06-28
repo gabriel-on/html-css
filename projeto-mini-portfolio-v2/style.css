@@ -47,6 +47,14 @@ img{
     padding: 20px 0px;
 }
 
+@media (max-width: 600px) {
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .menu-nav ul{
     list-style: none;
     display: flex;
@@ -63,16 +71,20 @@ img{
 }
 
 .menu-nav a:hover{
-    color: black;
+    color: var(--cor-4);
     background-color: var(--cor-0);
     padding: 10px;
     transition: 0.5s;
 }
 
 .logo-name{
-    color: var(--cor-1);
+    color: var(--cor-0);
+    /* background-color: var(--cor-0); */
+    border-radius: 5px;
     display: flex;
+    flex-wrap: wrap;
     text-transform: uppercase;
+    margin: 0px 10px;
 }
 
 /* MAIN < ---------------------------------- */
@@ -118,7 +130,7 @@ main > h2{
     flex-wrap: wrap;
     max-width: 600px;
     margin: 20px 0px;
-    padding: 40px 0px;
+    padding: 20px 0px;
 }
 
 .logo-img {
@@ -159,7 +171,13 @@ desc{
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0px;
-    padding: 40px 0px;
+    padding: 20px 0px;
+}
+
+@media (max-width: 600px) {
+    .redes-bg{
+        margin: 20px auto;
+    }
 }
 
 .redes-container{
