@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding-top: 100px; */
+}
+
+.back-bg-in{
+    background-color: black;
+    max-width: 100%;
+    margin: auto;
+    /* position: fixed;
+    top: 0; */
+}
+
+.back-bg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.logo-nome{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    max-width: 940px;
+}
+
+.logo-nome h1{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.search-bg{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 940px;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+#search-bar{
+    display: flex;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-bg > span{
+    background-color: aquamarine;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(1, 26, 48);
+    margin: 0px 10px;
+    padding: 5px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 940px;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+section{
+    background-color: rgb(56, 49, 41);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 940px;
+    margin: auto;
+}
+
+section h1{
+    color: aliceblue;
+    display: flex;
+    margin: 10px auto;
+}
+
+section p{
+    color: rgb(126, 126, 126);
+    margin: 10px;
+    display: flex;
+}
