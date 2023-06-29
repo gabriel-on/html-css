@@ -4,21 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>barra de Pesquisa</title>
 </head>
 <body>
-    <section class="back-bg-in">
-        <div class="back-bg">
-            <div class="logo-nome">
-                <h1>Nome</h1>
+    <header>
+        <section class="back-bg-in">
+            <div class="back-bg">
+                <div class="logo-nome">
+                    <h1>Nome</h1>
+                </div>
+                <div class="search-bg">
+                    <input type="search" name="search-bar" id="search-bar" placeholder="buscar">
+                    <span class="material-symbols-outlined" id="">search</span>
+                </div>
             </div>
-            <div class="search-bg">
-                <input type="search" name="search-bar" id="search-bar" placeholder="buscar">
-                <span class="material-symbols-outlined" id="">search</span>
+        </section>
+        <nav class="menu-lateral">
+            <div class="btn-expandir">
+                <i class="bi bi-list"></i>
             </div>
-        </div>
-    </section>
+            <ul>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-house-door"></i></span>
+                        <span class="txt-link">Home</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-columns-gap"></i></span>
+                        <span class="txt-link">Dashboard</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-gear"></i></span>
+                        <span class="txt-link">Configurações</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-person-circle"></i></span>
+                        <span class="txt-link">Conta</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section>
             <h1>Pesquisa</h1>
