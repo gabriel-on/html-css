@@ -203,7 +203,7 @@ img{
 }
 
 .bio-user{
-    max-width: 50%;
+    max-width: 48%;
     display: flex;
     flex-wrap: wrap;
     margin: 0px 10px;
@@ -234,21 +234,32 @@ img{
 /* ------------------------------------------- */
 
 .opt-list{
-    background-color: var(--cor-1);
     display: flex;
     flex-wrap: wrap;
+    width: 48%;
     margin: 10px;
-    width: 45%;
 }
 
 .opt{
-    width: 100%;
+    background-color: var(--cor-1);
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
 }
 
 .opt ul{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opt li{
+    color: var(--cor-4);
+    margin: 10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -259,7 +270,7 @@ img{
     background-color: var(--cor-4);
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 48%;
     margin: 0px 10px;
     justify-content: center;
 }
