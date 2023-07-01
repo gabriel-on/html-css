@@ -200,6 +200,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .bio-user{
@@ -219,7 +220,7 @@ img{
     padding: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .bio-user{
         max-width: 100%;
         display: flex;
@@ -249,7 +250,6 @@ img{
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin: 0px;
 }
 
 .opt ul{
@@ -258,22 +258,52 @@ img{
     flex-wrap: wrap;
 }
 
+.opt ul a{
+    text-decoration: none;
+}
+
 .opt li{
     color: var(--cor-4);
-    margin: 10px;
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 5px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.opt li:hover{
+    color: #8D49F2;
+    background-color: var(--cor-4);
+    transition: 0.3s;
 }
 
 /* ------------------------------------------- */
 
 .fav-list{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 48%;
+    margin: 0px 10px;
+}
+
+.fav-container{
+    justify-content: space-evenly;
     background-color: var(--cor-4);
     display: flex;
     flex-wrap: wrap;
-    width: 48%;
-    margin: 0px 10px;
-    justify-content: center;
+    
+    max-width: 100%;
+}
+
+@media (max-width: 500px) {
+    .fav-list{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .pers-fav{
