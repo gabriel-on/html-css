@@ -192,8 +192,7 @@ img{
 .bio-bg{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    width: 1180px;
+    max-width: 1180px;
 }
 
 .bio-container{
@@ -208,7 +207,6 @@ img{
     display: flex;
     flex-wrap: wrap;
     margin: 0px 10px;
-    height: 15vh;
 }
 
 .bio-frase{
@@ -218,7 +216,14 @@ img{
     flex-wrap: wrap;
     width: 100%;
     padding: 10px;
-    height: 15vh;
+}
+
+@media (max-width: 400px) {
+    .bio-user{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .bio-frase p{
