@@ -143,16 +143,47 @@ img{
     position: absolute;
 }
 
-/* .user-img img::before{
+/* -------------------------------------------- */
+
+.bio-bg{
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--cor-1);
-    border: 6px solid var(--cor-4);
-    border-radius: 50%;
-    content: '';
-    cursor: pointer;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bio-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bio-item{
+    background-color: var(--cor-0);
+    border-radius: 5px;
+    max-width: 81%;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0px 10px;
-    padding: 80px;
-    transform: translateY(-50%);
-    position: absolute;
-} */
+    margin-top: auto;
+    padding: 10px;
+}
+
+/* ---------------------------------------- */
+
+#iv-bg{
+    border-radius: 5px;
+    background-color: var(--cor-4);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 80px;
+    width: 160px;
+    justify-content: center;
+}
+
+#iv-bg h2{
+    color: var(--cor-0);
+    font-size: 1.5em;
+    display: flex;
+}
