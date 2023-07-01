@@ -236,8 +236,8 @@ img{
 .opt-list{
     display: flex;
     flex-wrap: wrap;
-    width: 48%;
-    margin: 10px;
+    width: 100%;
+    margin: 10px 0px;
 }
 
 .opt{
