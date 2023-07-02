@@ -135,6 +135,7 @@ main {
     max-width: 600px;
     margin: 20px 0px;
     padding: 20px 0px;
+    transition: 0.6s;
 }
 
 .info-bg:hover{
@@ -185,6 +186,7 @@ desc{
     justify-content: center;
     margin: 20px 0px;
     padding: 20px 0px;
+    transition: 0.6s;
 }
 
 .redes-bg:hover{
@@ -243,6 +245,7 @@ desc{
     margin: auto;
     padding: 0px 0px;
     justify-content: space-around;
+    transition: 0.6s;
 }
 
 .projetos-bg:hover{
