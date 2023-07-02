@@ -296,6 +296,7 @@ img{
 .fav-container{
     justify-content: space-evenly;
     background-color: var(--cor-4);
+    border-radius: 0px 0px 5px 5px;
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
