@@ -10,9 +10,11 @@
 }
 
 :root{
-    ---cor-0: #ff0000;
-    ---cor-1: #ffff00;
-    ---cor-2: #ffa500;
+    --cor-0: #940730;
+    --cor-1: #e70f50;
+    --cor-2: #ffee00;
+    --cor-3: #00ADE1;
+    --cor-4: #363636;
 }
 
 * {
@@ -28,14 +30,28 @@ html{
 }
 
 body, html{
-    background-color: #575757;
+    background-color: var(--cor-4);
     font-family: "nunito", Arial, Helvetica, sans-serif;
+}
+
+h2{
+    border-radius: 10px 0px;
+    background-image: linear-gradient(to right, var(--cor-1), transparent);
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
 }
 
 /* TOP */
 
 .top-clan-bg{
-    background-color: #d1ce00;
+    background-color: rgb(192, 192, 0);
     color: white;
 }
 
@@ -65,7 +81,7 @@ marquee .top-clan{
 /* MENU */
 
 .menu-bg{
-    background-color: #ece801;
+    background-color: var(--cor-2);
     box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.349);
 }
 
@@ -84,9 +100,6 @@ marquee .top-clan{
 }
 
 .menu-logo{
-    /* font-size: 3em;
-    font-weight: bold;
-    margin: 0px 10px; */
     flex: 1;
     max-width: 10%;
 }
@@ -111,12 +124,14 @@ marquee .top-clan{
 /* INTRODUÇÂO */
 
 .intro{
+    display: flex;
+    color: var(--cor-0);
     font-size: 3em;
-    line-height: 1;
     max-width: 960px;
     margin: auto;
     padding: 40px 10px;
     text-transform: uppercase;
+    justify-content: center;
 }
 
 /* SOBRE */
@@ -169,7 +184,7 @@ marquee .top-clan{
 
 .membros-item a{
     border-radius: 5px 0px;
-    background-image: linear-gradient(to left, var(---cor-0), transparent);
+    background-image: linear-gradient(to left, var(--cor-0), transparent);
     display: block;
     margin: 0px;
     padding: 28px;
@@ -198,7 +213,7 @@ marquee .top-clan{
 
 .hall-item a{
     border-radius: 5px 0px;
-    background-image: linear-gradient(to left, var(---cor-0), transparent);
+    background-image: linear-gradient(to left, var(--cor-0), transparent);
     display: block;
     margin: 0px;
     padding: 28px;
@@ -209,7 +224,7 @@ marquee .top-clan{
 .regras{
     border-radius: 10px 0px;
     box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.445);
-    background-color: rgb(54, 54, 54);
+    background-color: black;
     max-width: 940px;
     margin: 60px auto;
 }
@@ -248,27 +263,13 @@ marquee .top-clan{
 .footer{
     align-items: center;
     display: flex;
-    background-color: #202020;
+    background-color: black;
     height: 200px;
 }
 
 .footer p{
-    color: #858484;
+    color: var(--cor-0);
     flex: 1;
     font-size: 2em;
     text-align: center;
-}
-
-h2{
-    border-radius: 10px 0px;
-    background-image: linear-gradient(to right, var(---cor-0), transparent);
-    font-size: 3em;
-    margin-bottom: 0.5em;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-img {
-    display: flex;
-    max-width: 100%;
 }
