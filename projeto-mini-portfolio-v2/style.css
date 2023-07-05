@@ -121,7 +121,7 @@ img{
     flex-wrap: wrap;
 }
 
-#switch span{
+#switch > span{
     display: flex;
     flex-wrap: wrap;
     color: var(--cor-0);
