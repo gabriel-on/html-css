@@ -32,8 +32,28 @@
 
 }
 
-/* ---------------------------------- */
+@keyframes slide-in {
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+@keyframes slide-out {
+    from{
+        left: 50%;
+    }
+    to{
+        left: 10%;
+    }
+}
 
+.light #switch button{
+    animation: slide-in 0.3s forwards;
+}
+
+/* ---------------------------------- */
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -86,6 +106,7 @@ img{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin: 0px 10px;
 }
 
 .menu-nav a{
@@ -117,16 +138,43 @@ img{
 /* DARK/LIGHT < ------------TESTE----------- */
 
 #switch{
-    display: flex;
+    position: relative;
     flex-wrap: wrap;
+    margin: auto;
 }
 
-#switch > span{
-    display: flex;
+#switch button{
+    cursor: pointer;
+    background-color: var(--cor-0);
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    animation: slide-out 0.3s;
+    transition: 0.3s;
+}
+
+#switch button:hover{
+    outline: 6px solid var(--cor-1);
+    transition: 0.3s;
+}
+
+#switch span{
+    display: block;
     flex-wrap: wrap;
-    color: var(--cor-0);
+    background: var(--cor-3);
+    border: 1px solid var(--cor-0);
+    border-radius: 999px;
     font-size: 2.5em;
-    margin: 0px 10px;
+    width: 48px;
+    height: 24px;
+    padding: 0px;
 }
 
 /* MAIN < ---------------------------------- */
