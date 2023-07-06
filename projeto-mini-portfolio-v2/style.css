@@ -100,6 +100,7 @@ img{
 
 .menu-nav{
     display: flex;
+    margin: 0px 10px;
 }
 
 .menu-nav ul{
@@ -141,10 +142,10 @@ img{
     position: relative;
     flex-wrap: wrap;
     margin: auto;
+    cursor: pointer;
 }
 
 #switch button{
-    cursor: pointer;
     background-color: var(--cor-0);
     border: none;
     border-radius: 50%;
