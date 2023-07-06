@@ -1,8 +1,12 @@
 function toggleMode(){
     const html = document.documentElement
     html.classList.toggle('light')
-    // modeSave(toggleMode)
+    
 }
+// localStorage.toggleMode = document.querySelector('toggleMode').value
+// document.querySelector('toggleMode').value = localStorage.toggleMode
+// function switch(){
+// }
 
 // window.onload = getToggleMode
 
