@@ -1,16 +1,15 @@
 function toggleMode(){
     const html = document.documentElement
     html.classList.toggle('light')
+    // modeSave(toggleMode)
 }
 
-// let toggleMode = document.querySelector('#switch')
-// let ball = document.querySelector(".ball")
-// let dark = document.querySelector('.bi-toggle-off')
+// window.onload = getToggleMode
 
-// toggleMode.onclick = () => {
-//     ball.classList.toggle('active')
+// function modeSave(toggleMode){
+//     localStorage.setItem('toggleMode', JSON.stringify(toggleMode))
 // }
-
-// localStorage.setItem('pagTema', JSON.stringify(tema))
-
-// let Get <-------- https://youtu.be/-Jt_h91uXkQ
+// function getToggleMode(){
+//     const toggleMode = JSON.parse (localStorage.getItem('toggleMode'))
+//     light(toggleMode)
+// }
