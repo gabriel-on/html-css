@@ -110,38 +110,31 @@ main{
 
 .user-bg-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70vh;
-    grid-template-areas: "d-user d-user d-user" 'des des' 'fav fav';
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 4fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-areas: 
+    'side-f side-f1 nav' 
+    'side-n side-n user-fav' 
+    'side-i side-i cont';
+    gap: 10px;
 }
 
 /* ------------------SIDER---------------- */
 
-.sider-user{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.sider-user-1{
+.sider-foto{
     background: var(--cor-2);
-    grid-area: d-user d-user;
-    height: 100px;
+    grid-area: side-f;
+    height: 80px;
+    border-radius: 0px 0px 5px 5px;
 }
 
-.sider-user-2{
-    background: var(--cor-2);
-    grid-area: d-user d-user;
-    height: 100px;
+.sider-foto div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.sider-user-3{
-    background: var(--cor-2);
-    grid-area: d-user d-user;
-}
-
-.sider-user-1 img{
+.sider-foto div img{
     display: flex;
     flex-wrap: wrap;
     background-color: var(--cor-0);
@@ -154,42 +147,83 @@ main{
     position: 0;
 }
 
-.icon-item{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: flex-end; */
-    max-width: 200px;
+.sider-foto-1{
+    background: var(--cor-2);
+    grid-area: side-f1;
+    border-radius: 0px 0px 5px 5px;
 }
 
-.icon-item img{
+.sider-foto-1 div{
     display: flex;
     flex-wrap: wrap;
-    background: var(--cor-0);
-    border: none;
+    justify-content: space-between;
+}
+
+.sider-foto-1 img{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--cor-1);
+    border: 2px solid var(--cor-3);
     border-radius: 5px;
-    /* transform: translateY(-50%); */
-    width: 38px;
-    padding: 10px;
+    width: 30px;
     margin: 5px;
-    /* position: absolute; */
+    padding: 5px;
 }
 
-/* --------------AREA-do-USUARIO------------- */
-.area-do-usuario{
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    gap: 20px;
-}
-/* ------------------USUARIO----------------- */
-
-.des{
+.sider-user-name{
     background: var(--cor-2);
-    grid-area: des des;
+    grid-area: side-n;
 }
 
-.fav{
+.sider-info{
+    max-width: 400px;
     background: var(--cor-2);
-    grid-area: fav fav;
+    grid-area: side-i;
+}
+
+.sider-name{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sider-name ul{
+    font-size: 1.2em;
+    list-style: none;
+    line-height: 2;
+    margin: 10px;
+}
+
+.sider-name ul li{
+    color: var(--cor-4);
+}
+
+/* --------------CONTEUDO------------- */
+
+.nav-desc{
+    background: var(--cor-2);
+    border-radius: 0px 0px 5px 5px;
+    grid-area: nav;
+    height: 80px;
+}
+
+.nav-desc div{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.nav-desc div p{
+    margin: 10px;
+}
+
+.user-info{
+    background: var(--cor-2);
+    grid-area: user-fav;
+}
+
+
+.content{
+    background: var(--cor-2);
+    grid-area: cont;
 }
 
 /* -------------------FOOTER----------------- */
