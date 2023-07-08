@@ -91,260 +91,61 @@ body{
 /* ------------------------------------------ */
 
 main{
-    display: flex;
-    flex-wrap: wrap;
     margin: auto;
     max-width: 1180px;
-
 }
-
-/* ------------------------------------------ */
 
 .user-bg{
-    background-color: var(--cor-3);
+    background: var(--cor-0);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.user-bg img{
     width: 100%;
 }
 
-.user-info{
-    margin: 10px;
-    background-color: var(--cor-3);
+/* ----------------INICIO-GRID--------------- */
+
+.user-bg-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 70vh;
+    grid-template-areas: "d-user d-user" 'des des' 'fav fav';
+    gap: 20px;
 }
 
-#fundo-img{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--cor-2);
-    width: 100%;
-    /* padding: 0px 0px; */
+/* ------------------SIDER---------------- */
+.sider-user{
+    background: red;
+    grid-area: d-user d-user;
 }
 
-.user-img{
-    height: 10vh;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-img{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-}
-
-.user-img img{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--cor-1);
-    border: 4px solid var(--cor-3);
-    border-radius: 50%;
-    cursor: pointer;
+.sider-user img{
     width: 150px;
-    margin: 0px 10px;
-    transform: translateY(-50%);
-    position: 0;
+    border-radius: 50%;
 }
 
-/* https://www.flaticon.com/ */
+/* --------------AREA-do-USUARIO------------- */
+.area-do-usuario{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    gap: 20px;
+}
+/* ------------------USUARIO----------------- */
 
-#med-icon{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    flex-direction: column;
-    align-items: center;
+.des{
+    background: var(--cor-1);
+    grid-area: des des;
 }
 
-#med-icon img{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--cor-1);
-    border: 2px solid var(--cor-3);
-    border-radius: 5px;
-    width: 38px;
-    margin: 5px;
-    padding: 5px;
+.fav{
+    background: var(--cor-1);
+    grid-area: fav fav;
 }
 
-#med-icon h3{
-    display: flex;
-}
-
-/* ----------------- NOME ----------------------- */
-
-#name-bg{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-#name-bg h2{
-    width: 100%;
-    background-color: var(--cor-4);
-    border-left: 3px solid var(--cor-2);
-    border-radius: 5px;
-    color: var(--cor-0);
-    font-size: 1.5em;
-    display: flex;
-    margin: 10px 0px;
-    padding: 5px;
-}
-
-/* -------------------------------------------- */
-
-.bio-bg{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1180px;
-}
-
-.bio-container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.bio-user{
-    max-width: 48%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px 10px;
-    /* height: 10vh; */
-}
-
-.bio-frase{
-    border-radius: 5px;
-    background-color: var(--cor-1);
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 10px;
-}
-
-@media (max-width: 500px) {
-    .bio-user{
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-.bio-frase p{
-    font-size: 1.2em;
-    color: var(--cor-4);
-    text-align: justify;
-}
-
-/* ------------------------------------------- */
-
-.opt-list{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 10px 0px;
-}
-
-.opt{
-    background-color: var(--cor-1);
-    border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.opt ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.opt ul a{
-    text-decoration: none;
-}
-
-.opt li{
-    color: var(--cor-4);
-    border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 10px;
-    padding: 5px;
-    transition: 0.3s;
-    text-transform: uppercase;
-}
-
-.opt li:hover{
-    color: #8D49F2;
-    background-color: var(--cor-4);
-    transition: 0.3s;
-}
-
-/* ------------------------------------------- */
-
-.fav-list{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 48%;
-    margin: 0px 10px;
-    margin-bottom: 20px;
-}
-
-.fav-container{
-    justify-content: space-evenly;
-    background-color: var(--cor-4);
-    border-radius: 0px 0px 5px 5px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-}
-
-@media (max-width: 500px) {
-    .fav-list{
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-.fav-list h3{
-    background-color: var(--cor-2);
-    border-radius: 5px 5px 0px 0px;
-    color: var(--cor-4);
-    display: flex;
-    font-size: 1.5em;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-    text-transform: uppercase;
-    width: 100%;
-}
-
-.pers-fav{
-    background-color: var(--cor-1);
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    width: 100px;
-    height: 150px;
-    transition: 0.3s;
-}
-
-.pers-fav:hover{
-    filter: brightness(50%);
-    transition: 0.3s;
-}
-
-.pers-fav img{
-    width: 100%;
-}
-
-/* -------------------FOOTER-------------------- */
+/* -------------------FOOTER----------------- */
 
 footer{
     color: var(--cor-2);
