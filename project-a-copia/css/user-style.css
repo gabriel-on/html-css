@@ -126,6 +126,7 @@ main{
     grid-area: side-f;
     height: 80px;
     border-radius: 0px 0px 5px 5px;
+    /* margin: 0px 0px 10px 0px; */
 }
 
 .sider-foto div{
@@ -151,6 +152,7 @@ main{
     background: var(--cor-2);
     grid-area: side-f1;
     border-radius: 0px 0px 5px 5px;
+    /* margin: 0px 0px 10px 0px; */
 }
 
 .sider-foto-1 div{
@@ -224,6 +226,7 @@ main{
 .content{
     background: var(--cor-2);
     grid-area: cont;
+    height: 150px;
 }
 
 /* -------------------FOOTER----------------- */
