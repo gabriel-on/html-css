@@ -114,7 +114,9 @@ main{
     /* grid-template-rows: 1fr 1fr 1fr; */
     grid-template-areas: 
     'side-f side-f1 nav' 
-    'side-n side-n user-fav' 
+    'side-n side-n nav' 
+    'side-n side-n nav' 
+    'side-n1 side-n1 user-fav' 
     'side-i side-i cont';
     gap: 10px;
 }
@@ -171,19 +173,50 @@ main{
     margin: 5px;
     padding: 5px;
 }
-
+/* -----------------------NOME-------------------------- */
 .sider-user-name{
     background: var(--cor-2);
     grid-area: side-n;
+    border-radius: 5px;
+    border-left: 3px solid var(--cor-0);
 }
 
+.user-name-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-name-item h1{
+    color: var(--cor-4);
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+/* ------------------------------------------------------ */
+
+.sider-user-name-1{
+    background: var(--cor-2);
+    grid-area: side-n1;
+    border-radius: 5px;
+    border-left: 3px solid var(--cor-0);
+}
+
+.user-name-item-1{
+    color: var(--cor-3);
+    font-size: 1em;
+    margin: 5px;
+}
+
+/* ---------------------------------------------------- */
 .sider-info{
-    max-width: 400px;
+    width: 100%;
     background: var(--cor-2);
     grid-area: side-i;
+    border-radius: 5px;
 }
 
 .sider-name{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -194,8 +227,40 @@ main{
     margin: 10px;
 }
 
-.sider-name ul li{
+.icon-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.icon-item a{
+    align-items: center;
+    border-radius: 5px;
     color: var(--cor-4);
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.icon-item a > i{
+    color: yellow;
+    font-size: 24px;
+}
+.icon-item a > p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin: 0px 10px;
+}
+
+.icon-item a:hover{
+    background: var(--cor-4);
+    color: var(--cor-0);
+    transition: 0.3s;
 }
 
 /* --------------CONTEUDO------------- */
@@ -204,7 +269,7 @@ main{
     background: var(--cor-2);
     border-radius: 0px 0px 5px 5px;
     grid-area: nav;
-    height: 80px;
+    /* height: 80px; */
 }
 
 .nav-desc div{
@@ -217,19 +282,24 @@ main{
     margin: 10px;
 }
 
+/* -------------------INFO------------------- */
+
 .user-info{
+    border-radius: 5px;
     background: var(--cor-2);
     grid-area: user-fav;
 }
 
+/* --------------------CONT------------------- */
 
 .content{
+    border-radius: 5px;
     background: var(--cor-2);
     grid-area: cont;
     height: 150px;
 }
 
-/* -------------------FOOTER----------------- */
+/* --------------------FOOTER----------------- */
 
 footer{
     color: var(--cor-2);
