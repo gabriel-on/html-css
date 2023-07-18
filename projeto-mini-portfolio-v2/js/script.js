@@ -1,7 +1,15 @@
 function toggleMode(){
-    const html = document.documentElement
-    html.classList.toggle('light')
-    
+    if(localStorage.mode !== toggleMode){
+
+        const html = document.documentElement
+        html.classList.toggle('light')
+
+        html.addEventListener('click', (e) => {
+            console.log(e)
+            localStorage.mode = toggleMode
+        })
+
+    }
 }
 // localStorage.toggleMode = document.querySelector('toggleMode').value
 // document.querySelector('toggleMode').value = localStorage.toggleMode
